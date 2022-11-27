@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Academia</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/template.css">
+</head>
+<body>
+    <main id="banner">
+        <div class="container">
+               <img src="assets/imgs/gym.jpg">
+        </div>
+        <div class="inicio_formulario">
+            <h1>Informações pessoais:</h1>
+           <fieldset>
+
+                    <form method="post">
+                        <label for="name">
+                            Nome Completo:<br/>
+                            <input type="text" name="name" id="name" required>
+                        </label><br/><br/>
+                        <label for="idade">
+                            Idade: <br/>
+                            <input type="number" name="age" id="idade" min="15" max="100" required>
+                        </label><br/>
+                    </form><br/>
+                    <form>
+                        Sexo:<br/>
+                        
+                        <select name="ordenacao" required>
+                            <option>Masculino</option>
+                            <option>Feminino</option>
+                        </select>
+
+                    </form><br/>
+
+                    <form method="post">
+                        Objetivo:<br/>
+                        
+                        <select name="ordenacao">
+                            <option>Hipertrofia</option>
+                            <option>Emagrecer</option>
+                            <option>Deninição Muscular</option>
+                            <option>Saúde</option>
+                        </select>
+
+                    </form><br/>
+                    <section>
+                        <form method="post">
+                            Outro:<br/>
+                            <textarea> </textarea>
+                        </form>
+                    </section>
+            </fieldset>
+            <h1>Contato:</h1>
+            <fieldset>
+            <form>
+                Telefone:<br/>
+                <label for="fone">
+                    <input type="number" name="phone" id="fone">
+                </label><br/><br/>
+                <label>
+                    E-mail:<br/>
+                    <input type="email" name="mail" id="email" pattern="(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9]+\.[a-zA-Z0-9-.]+$)" >
+                </label><br/>
+            </form><br/><br/>
+        </fieldset>
+        <br/><br/>
+        <form action="paginas/login.html" method="get">
+        <input  id="botao" type="submit" value="Enviar Formulario">
+         </form>
+            </div><br/>
+            
+    </main>
+    <section>
+        
+    </section>
+
+</body>
+</html>
